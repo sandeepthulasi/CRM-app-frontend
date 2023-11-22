@@ -1,0 +1,409 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins;
+}
+
+/* ********Main login Page properties starts *********** */
+.loginPage {
+  width: 100%;
+  min-width: 280px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #67b7c4;
+  gap: 2rem;
+}
+.textArea {
+  width: 50%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.textArea :nth-child(1) {
+  font-size: 35px;
+  font-weight: bolder;
+  color: antiquewhite;
+}
+.textArea :nth-child(2) {
+  font-size: 25px;
+  font-weight: bolder;
+  color: antiquewhite;
+}
+.loginUserButtons {
+  width: 50%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.selectUserButtons {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: #252757;
+  font-weight: bolder;
+  padding: 0 20px 0 20px;
+  cursor: pointer;
+}
+
+.managerLoginForm,
+.managerSignupOtpForm,
+.managerSignupOtpForm,
+.ManagerNewPinForm {
+  width: 500px;
+  height: fit-content;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputSection {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 10px;
+}
+/* ********Main login Page properties end*********** */
+/* ********Manger Dash board *********** */
+.managerDashboard {
+  display: flex;
+}
+
+.sideNav {
+  width: 15%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.pageName {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 20%;
+  justify-content: center;
+}
+
+.pageName span {
+  color: aliceblue;
+  font-size: 30px;
+}
+
+.navOptions {
+  width: 100%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  margin-top: 20px;
+}
+.sideNavButtons {
+  padding: 10px;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.navButtonText {
+  font-size: 20px;
+  font-weight: bolder;
+  color: aliceblue;
+}
+.contentPage {
+  width: 85%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.topBar {
+  width: 100%;
+  height: 100px;
+  min-width: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.pageOptions {
+  border: 2px solid;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3b2d5a;
+  border-radius: 5px;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.options {
+  width: 150px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+.contentTableSection {
+  width: 100%;
+  min-height: 600px;
+  overflow: scroll;
+}
+.contentTableSection table {
+  width: 100%;
+  font-size: 20px;
+}
+.contentTableSection td {
+  text-align: center;
+  border: 2px solid rgb(0, 0, 0);
+}
+
+/* add leads,service,employees form */
+.addLeadsFormSection,
+.addServiceFormSection,
+.addEmployeeFormSection,
+.updateEmployeeFormSection {
+  position: absolute;
+  width: 85%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.252);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.closeButton {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 90%;
+}
+.addLeadsFrom,
+.addServiceFrom,
+.addEmployeeFrom,
+.updateServiceFrom {
+  width: 40%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* .managerHomepage {
+  margin-left: 20px;
+  width: 100%;
+  min-width: 200px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.leadsSection,
+.serviceSection {
+  width: 100%;
+  height: 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+.leadsSection,
+.serviceSection span {
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.cardSection {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.leadCards,
+.serviceRequestCards {
+  width: 200px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+} */
+
+/* ************ User Management Page Properties start *********** */
+.managementPage {
+  width: 100%;
+  min-width: 200px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(223, 223, 223);
+}
+
+.pageButtonSection {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.userButtons {
+  width: fit-content;
+  height: 50px;
+  margin: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.userButtons span {
+  padding: 10px;
+}
+/* *********admin data section ********* */
+.dataSection {
+  width: 95%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  gap: 1rem;
+}
+.addButtonSection {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.addEmployeeButton {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.dataCardsSection {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 10px;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.userDataCards {
+  min-width: 300px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.userDataCards img {
+  width: 100px;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+
+.userDataSection {
+  width: 90%;
+  height: 25px;
+  display: flex;
+  gap: 0.5rem;
+  padding: 10px 10px 0px 10px;
+}
+
+/* ********lead page form properties starts********** */
+.leadsPage {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.leadPageButtonSection {
+  border: 2px solid;
+  width: 80%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.leadPageButtons {
+  width: fit-content;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px 0 10px;
+}
+
+.tableSection {
+  border: 2px solid;
+  width: 100%;
+  height: 100%;
+}
+.addNewLeadsForm {
+  position: absolute;
+  width: 50%;
+  height: fit-content;
+  margin-top: 0;
+  z-index: 1;
+  margin: 100px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.addNewLeadsForm span {
+  font-size: 25px;
+  font-weight: bolder;
+  color: #3e0e40;
+}
+.leadFormButtons {
+  width: 150px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
